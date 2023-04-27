@@ -7,6 +7,7 @@ import { authModalState } from '@/atoms/authModalAtom';
 const AuthButtons: React.FC = () => {
     const setAuthModalState = useSetRecoilState( authModalState );
 
+
     return (
         <>
             <Button variant="outline" height="28px"
