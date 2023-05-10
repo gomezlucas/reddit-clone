@@ -19,7 +19,7 @@ const OAuthButtons: React.FC = () => {
         if (userCred) {
             CreateUserDocument(userCred.user)
         }
-    }, userCred)
+    }, [userCred])
 
     return (
         <Flex direction="column" width="100%" mb={4}>
@@ -28,7 +28,7 @@ const OAuthButtons: React.FC = () => {
                 onClick={() => signInWithGoogle()}
             >
                 <Image
-                    src="./images/googlelogo.png"
+                    src="/images/googlelogo.png"
                     height="20px" mr={4}
                 />
                 Continue with Google</Button>

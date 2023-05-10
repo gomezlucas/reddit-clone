@@ -34,8 +34,7 @@ const Login: React.FC<LoginProps> = () => {
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault()
         signInWithEmailAndPassword(loginForm.email, loginForm.password)
-        console.log("here")
-    }
+     }
 
     const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setLoginForm((prev) => ({
